@@ -6,13 +6,15 @@ export const Countup = () => {
     if (count == 0) {
       setInterval(() => {
         setCount((i) => i + 1);
-      }, 1000);
+      }, 2000);
     }
   });
 
   return (
-    <div className="card">
-      <h1>{count}</h1>
+    <div className="container align-items-end text-end">
+      <div className="width-40 border border-primary ">
+        <h4>{count}</h4>
+      </div>
     </div>
   );
 };
